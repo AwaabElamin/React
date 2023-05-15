@@ -1,6 +1,6 @@
 import '../css/App.css';
 import {CreateForm, CreateFormJSX} from './createFeature';
-import { Employees } from './employees/Employees';
+import { Employees, SampleEmployee } from './employees/Employees';
 import Product from './Product';
 import logo from '../images/logo.svg';
 import{useState} from 'react';
@@ -21,6 +21,7 @@ function App() {
         </div>
         {isJSX?(<CreateForm/>):(<CreateFormJSX/>)}
         <Employees/>
+        <SampleEmployee/>
       </header>
     </div>
   );
